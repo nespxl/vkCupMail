@@ -1,0 +1,358 @@
+.writeBtnContainer {
+    /* width: 100%; */
+    padding: 8px 33px;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    border-radius: 8px;
+    /* margin-top: 50px; */
+    margin-bottom: 12px;
+    background: #fff;
+    /* transition: background .2s ease; */
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 8px;
+    background: rgba(0, 16, 61, 0.12);
+    /* transition: background .2s ease; */
+}
+
+.newDir {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #999;
+    /* transition: all .2s ease; */
+}
+
+.btnContainer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.btnPlus {
+    padding: 0 15px;
+    transform: translateY(2px);
+}
+
+.btnContainer:hover .newDir {
+    color: #666;
+}
+
+.btnContainer:hover .btnPlus svg path {
+    fill: #666;
+}
+
+.themeContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.theme {
+    user-select: none;
+}
+
+.themeActive {
+    color: #E7E8EA;
+    /* transition: color .2s ease; */
+}
+
+/* .containerHeaderActive {
+    background: #232324;
+} */
+
+.palette {
+    transform: translateY(2px);
+    padding: 10px;
+}
+
+.containerMail {
+    width: 100%;
+}
+
+.imgDoc {
+    width: 256px;
+    height: 190px;
+    border-radius: 12px;
+}
+
+/* .imgDoc:not(:last-child) {
+    margin-right: 10px;
+} */
+
+.containerImg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    /* transition: background .2s ease; */
+}
+
+.containerImg:hover {
+    background: rgba(0, 16, 61, 0.04);
+}
+
+.imgTooltip {
+    position: absolute;
+    display: none;
+    top: -170%;
+    left: -274px;
+    width: 264px;
+    height: 198px;
+    padding: 4px;
+    background: #fff;
+    /* transition: background .2s ease; */
+    box-shadow: 0px 4px 32px rgba(0, 16, 61, 0.24);
+    border-radius: 12px;
+    opacity: 0;
+    /* transition: all .2s ease; */
+    z-index: 10000;
+}
+
+.containerImg:hover .imgTooltip {
+    display: block;
+    opacity: 1;
+}
+
+.imgTooltipContainer {
+    width: 32px;
+    height: 32px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.descImg {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+    /* transition: color .2s ease; */
+}
+
+.figureImg {
+    position: relative;
+    display: inline-block;
+}
+
+.downloadContainer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background: linear-gradient(360deg, rgba(236, 237, 240, 0.95) 56.81%, rgba(236, 237, 240, 0) 104.46%);
+    /* transition: background .2s ease; */
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.downloadIcon {
+    margin-right: 8px;
+}
+
+.downloadText {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2C2D2E;
+    /* transition: color .2s ease; */
+}
+
+.writeBtn {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: 700;
+    color: #333333;
+    /* transition: color .2s ease; */
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.writeBtnIcon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .newDir {
+        display: none;
+    }
+    .line {
+        display: none;
+    }
+    .btnPlus {
+        display: none;
+    }
+    .writeBtnContainer {
+        padding: 9px;
+    }
+    .writeBtn {
+        display: none;
+    }
+    .writeBtnIcon {
+        display: block;
+    }
+    .theme {
+        display: none;
+    }
+}
+
+/* Меняем тему */
+
+/* Меняем задний фон */
+.htmlActiveTheme {
+    background: #19191A;
+}
+
+/* Меняем шапку */
+.htmlActiveTheme div .containerHeader {
+    background: #232324;
+}
+
+/* Меням текст ссылок навигационной панели */
+.htmlActiveTheme div .navigation .nav .nav__list .nav__elem .nav__link {
+    color: #FFFFFF;
+}
+
+/* Меняем цвет иконок навигационной панели */
+.htmlActiveTheme div .navigation .nav .nav__list .nav__elem .nav__link .nav__logo svg path {
+    fill: #FFFFFF;
+}
+
+/* Меняем цвет заднего фона на письмах */
+.htmlActiveTheme div .container .readLetters {
+    background: #232324;
+}
+.htmlActiveTheme div .container .readLetters .containerItem {
+    background: #232324;
+}
+
+/* Меняем в письмах цвет текста */
+.htmlActiveTheme div .container .readLetters .containerItem .author {
+    color: #E7E8EA;
+}
+.htmlActiveTheme div .container .readLetters .containerItem .containerInfoMailText .titleLetters {
+    color: #E7E8EA;
+}
+.htmlActiveTheme div .container .readLetters .containerItem .containerInfoMailText .textLetters {
+    color: #8C8E94;
+}
+
+/* Меняем цвет скрепки */
+.htmlActiveTheme div .container .readLetters .containerItem .dlcMailContainer .flagDoc svg path {
+    fill: #D9DADD;
+}
+
+/* Меняем цвет предпросмотра вложений */
+.htmlActiveTheme div .container .readLetters .containerItem .dlcMailContainer .flagDoc .tooltipFlagDoc  {
+    background: #19191A;
+}
+/* .htmlActiveTheme div .container .readLetters .containerItem .dlcMailContainer .flagDoc .tooltipFlagDoc .containerImg  {
+    background: #232324;
+} */
+/* .htmlActiveTheme div .container .readLetters .containerItem .dlcMailContainer .flagDoc .tooltipFlagDoc .containerImg .imgTooltipContainer  {
+    background: #232324;
+} */
+.htmlActiveTheme div .container .readLetters .containerItem .dlcMailContainer .flagDoc .tooltipFlagDoc .containerImg .descImg  {
+    color: #D9DADD;
+}
+.htmlActiveTheme div .container .readLetters .containerItem .dlcMailContainer .flagDoc .tooltipFlagDoc .containerImg .tooltipFlagDocImg  {
+    background: #19191A;
+}
+
+
+.htmlActiveTheme div .container .readLetters .containerItem .active {
+    border: 3px solid #232324;
+}
+
+/* меняем цвет лого */
+.htmlActiveTheme div .containerHeader .containerLogo .logo svg .mail {
+    fill: #fff; 
+}
+
+/* Меняем контейнер в item */
+.htmlActiveTheme div .container .containerInfo {
+    background: #232324;
+}
+
+/* Меняем заголовок в item */
+.htmlActiveTheme div .container .containerInfo .titleInfo {
+    color: #E7E8EA;
+}
+
+/* Меняем детали отправителя */
+.htmlActiveTheme div .container .containerInfo .mainDetails .authorContainer .sendMail .name {
+    color: #E7E8EA;
+}
+
+/* Меняем цвет категории */
+.htmlActiveTheme div .container .containerInfo .categoriesMailContainer .categoriesMailText {
+    color: #E7E8EA;
+}
+
+/* Меняем цвет текста сообщения */
+.htmlActiveTheme div .container .containerInfo .mailText {
+    color: #E7E8EA;
+}
+
+/* Цвет скачки файла */
+.htmlActiveTheme div .container .containerInfo .infoDocContainer .infoDocAmo {
+    color: #E7E8EA;
+}
+
+/* Меняем цвет подложки СКАЧАТЬ в фотографии */
+.htmlActiveTheme div .container .containerInfo .containerDoc .containerMail .figureImg .downloadContainer {
+    background: linear-gradient(360deg, rgba(44, 44, 45, 0.9) 45.32%, rgba(44, 44, 45, 0) 104.46%);
+}
+
+/* Меняем цвет иконки СКАЧАТЬ в фотографии */
+.htmlActiveTheme div .container .containerInfo .containerDoc .containerMail .figureImg .downloadContainer .downloadIcon svg path {
+    fill: #E7E8EA;
+}
+
+/* Меняем цвет СКАЧАТЬ в фотографии */
+.htmlActiveTheme div .container .containerInfo .containerDoc .containerMail .figureImg .downloadContainer .downloadText {
+    color: #E7E8EA;
+}
+
+/* Меняем цвет кнопки Вернуться */
+.htmlActiveTheme div .containerHeader .containerLogo .backText {
+    color: #E7E8EA;
+}
+
+/* Меняем цвет иконки Вернуться */
+.htmlActiveTheme div .containerHeader .containerLogo .backLogo svg path {
+    fill: #E7E8EA;
+}
+
+/* Меняем цвет иконки палитры */
+.htmlActiveTheme div .navigation .themeContainer .palette svg path {
+    fill: #E7E8EA;
+}
+
+/* Меняем hover на элементе письма */
+.htmlActiveTheme div .container .readLetters .containerItem:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.htmlActiveTheme div .navigation .nav .nav__list .nav__elem .nav__link:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.htmlActiveTheme div .navigation .nav .nav__list .nav__elem .activeHreh {
+    background: rgba(255, 255, 255, 0.08);
+}

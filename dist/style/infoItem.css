@@ -1,0 +1,132 @@
+.containerInfo {
+    position: relative;
+    height: 100vh;
+    margin-top: 56px;
+    background: #ffffff;
+    /* transition: background .2s ease; */
+    border-radius: 12px;
+}
+
+.titleInfo {
+    width: 80%;
+    padding: 16px 32px;
+    color: #2C2D2E;
+    /* transition: color .2s ease; */
+}
+
+.mainDetails {
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.authorImgContainer {
+    margin-right: 12px;
+}
+
+.authorImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.sendMail {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 4px;
+}
+
+.name {
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2C2D2E;
+    /* transition: color .2s ease; */
+}
+
+.date {
+    color: #87898F;
+    /* transition: color .2s ease; */
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.receiver {
+    color: #87898F;
+    /* transition: color .2s ease; */
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.mailText {
+    padding: 16px 32px 32px;
+    color: #2C2D2E;
+    /* transition: color .2s ease; */
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.containerDoc {
+    margin: 0 32px 8px;
+}
+
+.infoDocContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+}
+
+.infoDocAmo {
+    margin-right: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #2C2D2E;
+    /* transition: color .2s ease; */
+}
+
+.infoDocLoad {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #005BD1;
+    /* transition: color .2s ease; */
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.infoDocSize {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #87898F;
+    /* transition: color .2s ease; */
+}
+
+.categoriesMailContainer {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.categoriesMailIcon {
+    margin-right: 10px;
+}
+
+.categoriesMailText {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
